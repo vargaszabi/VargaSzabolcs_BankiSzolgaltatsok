@@ -3,12 +3,13 @@ package hu.petrik.bankiszolgaltatasok;
 public class HitelSzamla extends Szamla{
     public int hitelKeret;
 
-    public int getHitelKeret() {
-        return hitelKeret;
+    public HitelSzamla(Tulajdonos tulajdonos, int hitelKeret) {
+        super(tulajdonos);
+        this.hitelKeret = hitelKeret;
     }
 
-    public HitelSzamla(Tulajdonos tulajdonos) {
-        super(tulajdonos);
+    public int getHitelKeret() {
+        return hitelKeret;
     }
 
     @Override
